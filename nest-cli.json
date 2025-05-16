@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "builder": "swc",
+    "typeCheck": true,
+    "swcOptions": {
+      "module": {
+        "type": "commonjs"
+      },
+      "jsc": {
+        "parser": {
+          "syntax": "typescript",
+          "decorators": true,
+          "dynamicImport": true
+        },
+        "target": "es2022",
+        "keepClassNames": true,
+        "transform": {
+          "legacyDecorator": true,
+          "decoratorMetadata": true
+        }
+      }
+    }
+  }
+}
