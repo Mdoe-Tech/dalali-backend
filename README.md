@@ -1,99 +1,251 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# Dalali Real Estate Platform
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+A comprehensive real estate management platform built with NestJS, providing a robust backend solution for property listings, user management, and real estate transactions.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## 📋 System Overview
 
-## Description
+Dalali is a sophisticated real estate management platform designed to streamline and modernize property transactions in the real estate market. The backend system serves as the core engine that powers various aspects of real estate operations, from property listings to transaction management.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### Core Purpose
+- Facilitate seamless property transactions between property owners, real estate agents (Dalalis), and potential buyers/tenants
+- Provide a secure and efficient platform for property management and real estate operations
+- Enable data-driven decision making through comprehensive analytics and reporting
+- Support multiple stakeholders in the real estate ecosystem
 
-## Project setup
+### Key Stakeholders
+1. **Property Owners**
+   - List and manage their properties
+   - Track property inquiries and viewings
+   - Manage property documents and contracts
+   - Monitor property performance and analytics
 
+2. **Real Estate Agents (Dalalis)**
+   - Manage property listings and client relationships
+   - Schedule and coordinate property viewings
+   - Handle property inquiries and negotiations
+   - Access commission tracking and payment management
+
+3. **Tenants/Buyers**
+   - Search and filter properties based on preferences
+   - Schedule property viewings
+   - Submit inquiries and offers
+   - Track application status and documentation
+
+4. **Administrators**
+   - Oversee platform operations
+   - Manage user accounts and permissions
+   - Monitor system performance and security
+   - Generate reports and analytics
+
+### System Capabilities
+
+#### Property Management
+- Comprehensive property listing system with detailed specifications
+- Support for multiple property types (residential, commercial, land)
+- Advanced search and filtering capabilities
+- Location-based property discovery
+- Property status tracking and history
+
+#### Transaction Management
+- Secure payment processing
+- Document management and verification
+- Contract generation and management
+- Transaction history and audit trails
+
+#### Communication System
+- Real-time notifications
+- In-app messaging
+- Email notifications
+- SMS alerts for critical updates
+
+#### Analytics and Reporting
+- Property performance metrics
+- Market trend analysis
+- User activity tracking
+- Financial reporting
+- Custom report generation
+
+#### Security and Compliance
+- Role-based access control
+- Data encryption
+- Audit logging
+- GDPR compliance
+- Regular security updates
+
+## 🚀 Features
+
+- **User Management**
+  - Multi-role system (Admin, Owner, Dalali, Tenant)
+  - Secure authentication and authorization
+  - Profile management
+
+- **Property Management**
+  - Detailed property listings
+  - Multiple property types (House, Apartment, Land, Commercial)
+  - Property status tracking
+  - Image management
+  - Location-based search
+
+- **Real Estate Operations**
+  - Property viewings scheduling
+  - Inquiry management
+  - Document handling
+  - Payment processing
+  - Analytics and reporting
+
+- **Additional Features**
+  - Real-time notifications
+  - Mobile API support
+  - Internationalization (i18n)
+  - Caching system
+  - Rate limiting
+  - Comprehensive logging
+  - Swagger API documentation
+
+## 🛠️ Tech Stack
+
+- **Framework:** NestJS
+- **Database:** PostgreSQL with TypeORM
+- **Authentication:** JWT
+- **File Upload:** Multer
+- **Documentation:** Swagger/OpenAPI
+- **Caching:** Custom caching module
+- **Email:** Custom email module
+- **Logging:** Custom logging service
+
+## 📋 Prerequisites
+
+- Node.js (v14 or higher)
+- PostgreSQL
+- npm or yarn
+- Git
+
+## 🔧 Installation
+
+1. Clone the repository:
 ```bash
-$ pnpm install
+git clone <repository-url>
+cd dalali-backend
 ```
 
-## Compile and run the project
-
+2. Install dependencies:
 ```bash
-# development
-$ pnpm run start
-
-# watch mode
-$ pnpm run start:dev
-
-# production mode
-$ pnpm run start:prod
+npm install
 ```
 
-## Run tests
+3. Create a `.env` file in the root directory with the following variables:
+```env
+# Database
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+DB_DATABASE=dalali_db
 
+# JWT
+JWT_SECRET=your_jwt_secret
+JWT_EXPIRATION=24h
+
+# Server
+PORT=9000
+FRONTEND_URL=http://localhost:3000
+
+# Email
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=your_email
+SMTP_PASS=your_password
+```
+
+4. Run database migrations:
 ```bash
-# unit tests
-$ pnpm run test
+npm run migration:run
+```
+
+5. Start the development server:
+```bash
+npm run start:dev
+```
+
+## 🏗️ Project Structure
+
+```
+src/
+├── admin/           # Admin-specific features
+├── analytics/       # Analytics and reporting
+├── auth/           # Authentication and authorization
+├── common/         # Shared utilities and services
+├── config/         # Configuration files
+├── dalali/         # Dalali-specific features
+├── documents/      # Document management
+├── inquiries/      # Property inquiries
+├── location/       # Location services
+├── notifications/  # Notification system
+├── payments/       # Payment processing
+├── properties/     # Property management
+├── users/          # User management
+└── websocket/      # Real-time features
+```
+
+## 📚 API Documentation
+
+Once the server is running, you can access the Swagger API documentation at:
+```
+http://localhost:9000/api/docs
+```
+
+## 🧪 Testing
+
+Run the test suite:
+```bash
+# Unit tests
+npm run test
 
 # e2e tests
-$ pnpm run test:e2e
+npm run test:e2e
 
-# test coverage
-$ pnpm run test:cov
+# Test coverage
+npm run test:cov
 ```
 
-## Deployment
+## 🔐 Security
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+- JWT-based authentication
+- Role-based access control
+- Rate limiting
+- Input validation
+- CORS protection
+- Secure password hashing
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+## 📦 Deployment
 
+1. Build the application:
 ```bash
-$ pnpm install -g mau
-$ mau deploy
+npm run build
 ```
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+2. Start the production server:
+```bash
+npm run start:prod
+```
 
-## Resources
+## 🤝 Contributing
 
-Check out a few resources that may come in handy when working with NestJS:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+## 📝 License
 
-## Support
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## 👥 Authors
 
-## Stay in touch
+- Your Name - Initial work
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## 🙏 Acknowledgments
 
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+- NestJS team for the amazing framework
+- All contributors who have helped shape this project
